@@ -1,45 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Basic -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Mobile Metas -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- Site Metas -->
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+{% extends 'base.html' %}
 
-    <title>Willism</title>
+{% block head %} {% endblock %}
 
-    <!-- slider stylesheet -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"
-    />
+{% block hero %} 
 
-    <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-    <!-- fonts style -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
-  </head>
-
-  <body>
-      <!-- slider section -->
-      <div class="slider_section">
+<div class="slider_section">
         <div
           id="carouselExampleControls"
           class="carousel slide"
@@ -66,7 +31,7 @@
                   </div>
                   <div class="col-lg-5 px-0">
                     <div class="img-box">
-                      <img src="images/slider-img.png" alt="" />
+                      <img src="../static/images/slider-img.png" alt="" />
                     </div>
                   </div>
                 </div>
@@ -92,7 +57,7 @@
                   </div>
                   <div class="col-lg-5 px-0">
                     <div class="img-box">
-                      <img src="images/slider-img.png" alt="" />
+                      <img src="../static/images/slider-img.png" alt="" />
                     </div>
                   </div>
                 </div>
@@ -118,7 +83,7 @@
                   </div>
                   <div class="col-lg-5 px-0">
                     <div class="img-box">
-                      <img src="images/slider-img.png" alt="" />
+                      <img src="../static/images/slider-img.png" alt="" />
                     </div>
                   </div>
                 </div>
@@ -148,39 +113,40 @@
 
       <!-- end slider section -->
     </div>
-    <!-- end hero area -->
 
-    <!-- about section -->
+{% endblock %}
 
-    <section class="about_section layout_padding-bottom">
-      <div class="container">
-        <div class="heading_container">
-          <h2>
-            About
-          </h2>
+{% block body %}
+
+ <section class="about_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          About
+        </h2>
+      </div>
+      <div class="box layout_padding2-top layout_padding-bottom">
+        <div class="detail-box">
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The
+            point of using LoremIt is a long established fact that a reader
+            will be distracted by the readable content of a page when looking
+            at its layout. The point of using Lorem
+          </p>
         </div>
-        <div class="box layout_padding2-top layout_padding-bottom">
-          <div class="detail-box">
-            <p>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using LoremIt is a long established fact that a reader
-              will be distracted by the readable content of a page when looking
-              at its layout. The point of using Lorem
-            </p>
-          </div>
-          <div class="img-box">
-            <img src="images/about-img.jpg" alt="" />
-          </div>
+        <div class="img-box">
+          <img src="../static/images/about-img.jpg" alt="" />
         </div>
       </div>
-      <div class="btn-box">
-        <a href="">
-          Read More
-        </a>
-      </div>
-    </section>
+    </div>
+    <div class="btn-box">
+      <a href="">
+        Read More
+      </a>
+    </div>
+  </section>
 
-    <!-- end about section -->
-  </body>
-</html>
+{% endblock %}
+
+{% block footer %} {% endblock %}

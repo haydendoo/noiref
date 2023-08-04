@@ -37,13 +37,13 @@ body {
           justify-content: center;
 }
 
-.heading_container h2 {
+.heading_container h1 {
   font-weight: bold;
   color: #323232;
   position: relative;
 }
 
-.heading_container h2::before {
+.heading_container h1::before {
   content: "";
   width: 75px;
   height: 1px;

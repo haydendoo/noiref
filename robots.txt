@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://noiref.haydenhow.com/sitemap.xml
