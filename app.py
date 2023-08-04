@@ -1,10 +1,6 @@
 from flask import Flask, render_template, send_from_directory
 from dotenv import load_dotenv
 import os
-# from gevent.pywsgi import WSGIServer
-
-if os.name != "nt":
-    os.chdir(os.path.dirname(__file__))
 
 load_dotenv()
 
@@ -28,6 +24,4 @@ def sitemap_xml():
     return send_from_directory(".", "sitemap.xml")
 
 if __name__ == "__main__":
-    # http_server = WSGIServer(('0.0.0.0', 2012), app)
-    # http_server.serve_forever()
     app.run(debug=True)
